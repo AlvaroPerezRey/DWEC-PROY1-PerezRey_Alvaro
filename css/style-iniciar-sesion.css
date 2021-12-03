@@ -85,7 +85,7 @@ li input{
     border-radius: 5px;
 }
 
-button{
+.registro_nav{
     font-family: var(--Gang);
     font-weight: 800;
     font-size: 20px;
@@ -104,72 +104,104 @@ button{
 
 /* Main */
 main{
-    background-image: url(../img/paisaje\ home.jpg);
+    background-image: url(../img/login.jpg);
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
 }
 
-.intermedia{
-    min-height: inherit;
-    opacity: 0.3;
+main section{
+    align-items: center;
     width: 100%;
-    background: white;
-}
-
-section{
+    height: 100%;
+    display: flex;
+    text-align: center;
     position: relative;
     min-height: 750px;
+    justify-content: center;
 }
 
-section h1{
-    font-family: var(--Roboto);
-    text-align: center;
+.login{
+    background-color: rgba(235,235,235,.85);
+    border: 1px solid;
+    border-radius: 0px 10px 10px 0px;
+    width: 50%;
+    height: 450px;
+    position: relative;
+}
+
+.registrate{
+    background-color: rgba(235,235,235,.85);
+    border: 1px solid;
+    border-radius: 10px 0px 0px 10px;
+    width: 30%;
+    height: 450px;
+    position: relative;
+}
+
+.registro_enlace{
+    font-weight: 500;
+    font-size: var(--h2);
     color: var(--negro);
-    font-size: var(--h1);
-    padding: 100px 0px 20px 0px;
-}
-
-section h2{
-    font-family: var(--Roboto);
-    text-align: center;
-    color: var(--negro);
-    font-size: 24px;
-    padding: 0px 320px 100px 290px;
-}
-
-section div{
-    text-align: center;
-    padding: 0px 50px 30px 50px;
-    position: absolute;
-}
-
-.anime{
-    padding: 0px 20px 0px 0px;
-}
-
-.anime button{
-    font-family: var(--Roboto);
-    color: var(--negro);
-    background-color: var(--naranjaIntenso);
+    background-color: var(--violetaSuave);
+    width: 65%;
+    height: 12%;
     border: 1px solid var(--negro);
-    font-size: 50px;
-    width: 550px;
-    height: 300px;
+    border-radius: 10px;
+    font-family: var(--Roboto);    
 }
 
-.manga{
-    padding: 0px 0px 0px 20px;
+div img{
+    width: 20%;
+    border-radius: 90%;
+    margin-top: 7%;
 }
 
-.manga button{
-    font-family: var(--Roboto);
+
+div h1{
+    font-family: "Roboto Slab";
     color: var(--negro);
-    background-color: var(--verdeIntenso);
-    border: 1px solid var(--negro);
     font-size: 50px;
-    width: 550px;
-    height: 300px;
+    padding: 0px 0px 0px 0px;
+}
+
+div h2{
+    font-family: "Roboto Slab";
+    color: var(--negro);
+    font-size: 30px;
+    padding: 20% 0px 30% 0px;
+}
+
+
+form{
+    margin-top: 4%;
+    height: 60%;
+}
+
+form div{
+    height: 100%;
+}
+
+input[type="text"]{
+    margin: 1% 0% 1% 0%;
+    width: 70%;
+    font-family: "Source Sans Pro";
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid var(--negro);
+    outline: 0;
+    background: none
+}
+
+.iniciar_sesion{
+    font-size: 20px;
+    color: var(--negro);
+    background-color: var(--violetaSuave);
+    width: 30%;
+    height: 15%;
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+    margin-top: 5%;
 }
 
 
@@ -204,7 +236,6 @@ footer{
 .rrss p{
     font-family: var(--SourceSansPro);
     color: var(--blanco);
-
 }
 
 .rrss li{
@@ -219,4 +250,9 @@ footer{
 .footer_links li{
     display: inline-block;
     padding: 0px 40px;
+}
+
+a img{
+    width: auto;
+    border-radius: 5%;
 }
