@@ -127,7 +127,7 @@ main section{
     border: 1px solid;
     border-radius: 0px 10px 10px 0px;
     width: 50%;
-    height: 450px;
+    height: 550px;
     position: relative;
 }
 
@@ -136,7 +136,7 @@ main section{
     border: 1px solid;
     border-radius: 10px 0px 0px 10px;
     width: 30%;
-    height: 450px;
+    height: 550px;
     position: relative;
 }
 
@@ -194,6 +194,21 @@ input[type="text"]{
     background: none
 }
 
+.label_captcha{
+    display: inline;
+}
+
+#captcha{
+    margin: 0% 0% 1% 0%;
+    width: 70%;
+    font-family: "Source Sans Pro";
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid var(--negro);
+    outline: 0;
+    background: none
+}
+
 .iniciar_sesion{
     font-size: 20px;
     color: var(--negro);
@@ -202,7 +217,18 @@ input[type="text"]{
     height: 15%;
     border: 1px solid var(--negro);
     border-radius: 5px;
-    margin-top: 5%;
+    margin: 4% 0% 0% 35%;
+    display: block;
+}
+
+.login p{
+    margin: 5% 0% 0% 13%;
+    width: 65%;
+
+}
+
+p label{
+    font-family: var(--SourceSansPro);
 }
 
 
