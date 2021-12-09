@@ -105,9 +105,9 @@ li input{
 
 /* Main */
 main{
-    background-image: url(../img/listadoanime.jpg);
+    background-image: url(../img/productomanga.jpg);
     width: 100%;
-    height: 100%;
+    height: 1250px;
     background-size: 100%;
 }
 
@@ -125,7 +125,7 @@ main section{
     border: 1px solid;
     border-radius: 10px 10px 10px 10px;
     width: 50%;
-    height: 15%;
+    height: 10%;
     position: relative;
     margin: -15% 0% 0% 25%;
     text-align: center;
@@ -137,40 +137,120 @@ main section{
     font-family: var(--Roboto);
 }
 
-.listado{
+.vista_producto{
     background-color: rgba(235,235,235,0.9);
     border: 1px solid;
     border-radius: 15px;
     width: 70%;
-    height: 650px;
+    height: 950px;
     position: relative;
     margin-bottom: 5%;
     margin-top: 15%;
 }
 
-.lista{
+.datos_producto{
+    width: 100%;
+    height: 107%;
+    padding-top: 5%;
+}
+
+.foto{
+    width: 20%;
+    border-radius: 5% 5% 5% 5%;
+    margin: 3% 0% 0% 3%;
+    border: var(--negro) 1px solid;
+    float: left;
+}
+
+.cabecera{
+    width: 100%;
+    height: 35%;
+}
+
+.cabecera aside{
     font-family: var(--SourceSansPro);
-    font-size: var(--p);
-    padding-top: 10%;
-}
-
-.lista p{
     font-size: var(--h3);
-    text-align: left;
-    padding-left: 4%;
+    width: 100%;
+    height: 100%;
+    padding: 3% 3% 0% 30%;
 }
 
-.lista ul{
-    padding: 3% 0% 0% 10%;
+aside p{
+    font-size: var(--p);
+    line-height: 25px;
 }
 
-ul li{
-    padding: 1% 0% 0% 0%;
+.titulos_alternativos h3{
+    font-family: var(--SourceSansPro);
+    font-size: var(--subhead);;
+    float: left;
+    padding: 0% 6% 2% 2%;
+    text-align: center;
+    width: 110%;
 }
 
-li a{
+.titulos_alternativos{
+    font-family: var(--SourceSansPro);
+    font-size: var(--p);;
+    float: left;
+    padding: 2% 6% 2% 2%;
+    text-align: center;
+}
+
+.intermedio_2{
+    padding: 1% 0% 2% 0%;
+    font-family: var(--SourceSansPro);
+}
+
+
+.datos h3{
+    display: inline;
+    font-size: var(--subhead);
+}
+
+.datos p{
+    font-size: var(--p);
+    height: 6px;
+}
+
+.final{
+    padding: 1% 2% 1% 2%;
+    font-family: var(--SourceSansPro);
+}
+
+#show,#hide {
+	display:none;
+}
+
+div#content {
+	display:none;
+    padding:10px;
+    background-color:rgba(235,235,235,0);
+    width:200px;
+    cursor:pointer;
+}
+
+input#show:checked ~ div#content {
+	display:block;
+    margin-left: 2%;
+    width: 100%;
+}
+
+input#hide:checked ~ div#content {
+	display:none;
+}
+
+.titulos_relacionados li{
+    padding-top: 1%;
+}
+
+.titulos_relacionados a{
     text-decoration: none;
-    color: var(--negro)
+    color: var(--negro);
+}
+
+aside h3{
+    display: inline;
 }
 
 

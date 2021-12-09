@@ -52,19 +52,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--violetaIntenso);
+    background-color: var(--violetaSuave);
 }
 
 .logo_header{
     float: left;
-    background-color: var(--violetaSuave);
+    background-color: var(--violetaIntenso);
     padding: 10px 3%;
 }
 
 .nav_links li a{
     font-size: 20px;
-    background-color: var(--violetaIntenso);
-    color: var(--blanco);
+    background-color: var(--violetaSuave);
+    color: var(--negro);
     text-decoration: none;
 }
 
@@ -80,18 +80,19 @@ header{
 li input{
     font-size: 20px;
     font-family: var(--Gang);
-    color: var(--violetaIntenso);
-    background-color: var(--blanco);
+    color: var(--violetaSuave);
+    background-color: var(--negro);
     text-decoration: none;
     border-radius: 5px;
+    border: none;
 }
 
-.registro_nav{
+button{
     font-family: var(--Gang);
     font-weight: 800;
     font-size: 20px;
-    color: var(--blanco);
-    background-color: var(--violetaSuave);
+    color: rgba(31, 31, 31,0.97);
+    background-color: var(--violetaIntenso);
     width: 150px;
     height: 35px;
     border: 0px;
@@ -103,74 +104,74 @@ li input{
     text-align: left;
 }
 
-/* Main */
+/* Estilos del main */
 main{
-    background-image: url(../img/listadoanime.jpg);
+    background-image: url(../img/paisaje\ home.jpg);
     width: 100%;
     height: 100%;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
-main section{
-    align-items: center;
+.intermedia{
+    min-height: inherit;
+    opacity: 0.3;
     width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-    justify-content: center;
+    background: white;
 }
 
-.titulo {
-    background-color: rgb(235, 235, 235);
-    border: 1px solid;
-    border-radius: 10px 10px 10px 10px;
-    width: 50%;
-    height: 15%;
+section{
     position: relative;
-    margin: -15% 0% 0% 25%;
-    text-align: center;
+    min-height: 750px;
 }
 
-.titulo h1 {
-    padding-top: 3%;
-    font-size: var(--h1);
+section h1{
     font-family: var(--Roboto);
+    text-align: center;
+    color: var(--blanco);
+    font-size: var(--h1);
+    padding: 100px 0px 20px 0px;
 }
 
-.listado{
-    background-color: rgba(235,235,235,0.9);
-    border: 1px solid;
-    border-radius: 15px;
-    width: 70%;
-    height: 650px;
-    position: relative;
-    margin-bottom: 5%;
-    margin-top: 15%;
+section h2{
+    font-family: var(--Roboto);
+    text-align: center;
+    color: var(--blanco);
+    font-size: 24px;
+    padding: 0px 320px 100px 290px;
 }
 
-.lista{
-    font-family: var(--SourceSansPro);
-    font-size: var(--p);
-    padding-top: 10%;
+section div{
+    text-align: center;
+    padding: 0px 50px 30px 50px;
+    position: absolute;
 }
 
-.lista p{
-    font-size: var(--h3);
-    text-align: left;
-    padding-left: 4%;
+.anime{
+    padding: 0px 20px 0px 0px;
 }
 
-.lista ul{
-    padding: 3% 0% 0% 10%;
+.anime button{
+    font-family: var(--Roboto);
+    color: var(--blanco);
+    background-color: var(--naranjaSuave);
+    border: 1px solid var(--blanco);
+    font-size: 50px;
+    width: 550px;
+    height: 300px;
 }
 
-ul li{
-    padding: 1% 0% 0% 0%;
+.manga{
+    padding: 0px 0px 0px 20px;
 }
 
-li a{
-    text-decoration: none;
-    color: var(--negro)
+.manga button{
+    font-family: var(--Roboto);
+    color: var(--blanco);
+    background-color: var(--verdeSuave);
+    border: 1px solid var(--blanco);
+    font-size: 50px;
+    width: 550px;
+    height: 300px;
 }
 
 
@@ -183,7 +184,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--violetaIntenso);
+    background-color: var(--violetaSuave);
 }
 
 .logo_footer{
@@ -193,8 +194,8 @@ footer{
 
 .footer_links li a{
     font-size: 16px;
-    background-color: var(--violetaIntenso);
-    color: var(--blanco);
+    background-color: var(--violetaSuave);
+    color: var(--negro);
     text-decoration: none;
 }
 
@@ -204,7 +205,8 @@ footer{
 
 .rrss p{
     font-family: var(--SourceSansPro);
-    color: var(--blanco);
+    color: var(--negro);
+
 }
 
 .rrss li{
@@ -219,9 +221,4 @@ footer{
 .footer_links li{
     display: inline-block;
     padding: 0px 40px;
-}
-
-a img{
-    width: auto;
-    border-radius: 5%;
 }

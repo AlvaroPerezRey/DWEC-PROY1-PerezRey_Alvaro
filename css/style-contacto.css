@@ -1,10 +1,11 @@
+/* Reseteamos los estilos del navegador */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Colores */
+/* Guia de estilos declarada con variables */
 :root{
     --negro: #1f1f1f;
     --gris: #EBEBEB;
