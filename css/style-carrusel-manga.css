@@ -86,7 +86,7 @@ li input{
     border-radius: 5px;
 }
 
-.registro_nav{
+button{
     font-family: var(--Gang);
     font-weight: 800;
     font-size: 20px;
