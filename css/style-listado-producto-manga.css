@@ -121,10 +121,10 @@ header p{
 
 /* Main */
 main{
-    background-image: url(../img/contacto.jpg);
+    background-image: url(../img/tops.jpg);
     width: 100%;
-    height: 800px;
-    background-size: 100% 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 main section{
@@ -132,84 +132,62 @@ main section{
     width: 100%;
     height: 100%;
     display: flex;
-    text-align: center;
     position: relative;
     justify-content: center;
 }
 
-.carrusel{
+.titulo {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid;
+    border-radius: 10px 10px 10px 10px;
+    width: 50%;
+    height: 15%;
+    position: relative;
+    margin: -15% 0% 0% 25%;
+    text-align: center;
+}
+
+.titulo h1 {
+    padding-top: 3%;
+    font-size: var(--h1);
+    font-family: var(--Roboto);
+}
+
+.listado{
     background-color: rgba(235,235,235,0.9);
     border: 1px solid;
     border-radius: 15px;
-    width: 75%;
-    height: 575px;
+    width: 70%;
+    height: 650px;
     position: relative;
     margin-bottom: 5%;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
-.main{
-    width: 950px;
-    height: 600px;
-    margin: 5% 0% 0% 3%;
-    overflow: hidden;
-    position: relative;
+.lista{
+    font-family: var(--SourceSansPro);
+    font-size: var(--p);
+    padding-top: 10%;
 }
 
-.banner{
-    width: 950px;
-    height: 460px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
+.lista p{
+    font-size: var(--h3);
+    text-align: left;
+    padding-left: 4%;
 }
 
-.banner-slide{
-    width: 1200px;
-    height: 460px;
-    position: absolute;
+.lista ul{
+    padding: 3% 0% 0% 10%;
 }
 
-.slide1{
-    background: url("../img/recortadabuscadoranime.jpg");
+ul li{
+    padding: 1% 0% 0% 0%;
 }
 
-.slide2{
-    background: url("../img/recortadabuscadormanga.jpg");
+li a{
+    text-decoration: none;
+    color: var(--negro)
 }
-
-.slide3{
-    background: url("../img/recortadalistadomanga.jpg");
-}
-
-.slide-active{
-    display: block;
-}
-
-.dots{
-    position: absolute;
-    right: 20px;
-    bottom: 100px;
-    text-align: right;
-}
-
-.dots span{
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    background-color: rgba(7,17,27,0.4);
-    margin-right: 8px;
-    line-height: 12px;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
-    cursor: pointer;
-}
-
-.dots span.active{
-    box-shadow: 0 0 0 2px rgba(7,17,27,0.4) inset;
-    background: #fff;
-}
-
 
 
 /* Estilos del footer */

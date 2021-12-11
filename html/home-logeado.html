@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style-carrusel-manga.css">
-    <title>Carrusel</title>
+    <link rel="stylesheet" href="../css/home-logeado.css">
+    <title>Home Logeado</title>
 </head>
 <body>
     <header>
@@ -24,30 +24,31 @@
 
     <main>
         <section>
-            <div class="carrusel">
-                <div class="main" id="main">
-
-                    <div class="banner" id="banner">
-            
-                        <a href="">
-                            <div class="banner-slide slide1 slide-active"></div>
-                        </a>
-                        <a href="">
-                            <div class="banner-slide slide2"></div>
-                        </a>
-                        <a href="">
-                            <div class="banner-slide slide3"></div>
-                        </a>
-            
-                    </div>
-            
-
-            
-                    <div class="dots" id="dots">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+            <div class="intermedia" ></div>
+            <div>
+                <div class="carrusel">
+                    <a href="./carrusel-manga.html" class="caja">
+                        <span>CARRUSEL</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                </div>
+                <div class="favoritos">
+                    <a href="./favs-anime.html" class="caja">
+                        <span>FAVORITOS</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                </div>
+                <h1>Ryoukai</h1>
+                <h2>Bienvenidos a Ryoukai, una pagina web donde podrás encontrar información sobre todos los títulos de anime y manga que existen hasta el momento</h2>
+                <div>
+                    <a class="anime" href="../html/listado-producto-anime.html"><button>ANIME</button></a>
+                    <a class="manga" href="../html/listado-producto-manga.html"><button>MANGA</button></a>
                 </div>
             </div>
         </section>
@@ -72,8 +73,6 @@
             </ul>
         </div>
     </footer>
-
-    <script src="../js/carrusel-manga.js"></script>
 
 </body>
 </html>

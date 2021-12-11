@@ -119,98 +119,171 @@ header p{
     width: 8%
 }
 
-/* Main */
+
+/* Estilos del main */
 main{
-    background-image: url(../img/contacto.jpg);
+    background-image: url(../img/paisaje\ home.jpg);
     width: 100%;
-    height: 800px;
+    height: 100%;
     background-size: 100% 100%;
 }
 
-main section{
-    align-items: center;
+.intermedia{
+    min-height: inherit;
+    opacity: 0.3;
     width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: center;
+    background: white;
+}
+
+section{
     position: relative;
-    justify-content: center;
+    min-height: 750px;
+}
+
+section h1{
+    font-family: var(--Roboto);
+    text-align: center;
+    color: var(--negro);
+    font-size: var(--h1);
+    padding: 100px 0px 20px 0px;
+}
+
+section h2{
+    font-family: var(--Roboto);
+    text-align: center;
+    color: var(--negro);
+    font-size: 24px;
+    padding: 0px 320px 100px 290px;
+}
+
+section div{
+    text-align: center;
+    padding: 0px 50px 30px 50px;
+    position: absolute;
+}
+
+.anime{
+    padding: 0px 20px 0px 0px;
+}
+
+.anime button:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 91%;
+    background: rgba(255, 153, 51, 0.1);
+    transition: all 1s ease;
+    margin-left: 4%;
+}
+
+.anime button:hover:before {
+    padding: 0px 20px 0px 0px;
+    width: 530px;
+    height: 300px;
+}
+
+.anime button{
+    font-family: var(--Roboto);
+    color: var(--negro);
+    background-color: var(--naranjaIntenso);
+    border: 1px solid var(--negro);
+    font-size: 50px;
+    width: 550px;
+    height: 300px;
+}
+
+.manga{
+    padding: 0px 0px 0px 20px;
+}
+
+.manga button:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0%;
+    height: 91%;
+    background: rgba(37, 154, 84, 0.1);
+    transition: all 1s ease;
+    margin-right: 4%;
+}
+
+.manga button:hover:before {
+    padding: 0px 20px 0px 0px;
+    width: 530px;
+    height: 300px;
+}
+
+.manga button{
+    font-family: var(--Roboto);
+    color: var(--negro);
+    background-color: var(--verdeIntenso);
+    border: 1px solid var(--negro);
+    font-size: 50px;
+    width: 550px;
+    height: 300px;
+}
+
+.favoritos{
+    width: 100%;
+    margin-top: 2%;
+    padding: 0% 85% 0% 0%;
+}
+
+.favoritos a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .carrusel{
-    background-color: rgba(235,235,235,0.9);
-    border: 1px solid;
-    border-radius: 15px;
-    width: 75%;
-    height: 575px;
-    position: relative;
-    margin-bottom: 5%;
+    width: 100%;
     margin-top: 5%;
+    padding: 0% 85% 0% 0%;
 }
 
-.main{
-    width: 950px;
-    height: 600px;
-    margin: 5% 0% 0% 3%;
-    overflow: hidden;
+.carrusel a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.caja {
     position: relative;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
 }
 
-.banner{
-    width: 950px;
-    height: 460px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.banner-slide{
-    width: 1200px;
-    height: 460px;
+.caja:before {
+    content: "";
     position: absolute;
-}
-
-.slide1{
-    background: url("../img/recortadabuscadoranime.jpg");
-}
-
-.slide2{
-    background: url("../img/recortadabuscadormanga.jpg");
-}
-
-.slide3{
-    background: url("../img/recortadalistadomanga.jpg");
-}
-
-.slide-active{
+    top: 0;
+    left: 0;
     display: block;
+    border-radius: 80px;
+    background: rgba(255, 255, 255, 0);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
 }
 
-.dots{
-    position: absolute;
-    right: 20px;
-    bottom: 100px;
-    text-align: right;
+.caja span {
+    font-family: var(--SourceSansPro);
+    position: relative;
+    font-size: var(--p);
+    font-weight: 900;
 }
 
-.dots span{
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    background-color: rgba(7,17,27,0.4);
-    margin-right: 8px;
-    line-height: 12px;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
-    cursor: pointer;
+.caja svg {
+    position: relative;
+    fill: none;
+    transition: all 0.3s ease;
 }
 
-.dots span.active{
-    box-shadow: 0 0 0 2px rgba(7,17,27,0.4) inset;
-    background: #fff;
+.caja:hover:before {
+    width: 85%;
+    background: var(--violetaIntenso);
 }
-
-
 
 /* Estilos del footer */
 footer{
@@ -243,6 +316,7 @@ footer{
 .rrss p{
     font-family: var(--SourceSansPro);
     color: var(--blanco);
+
 }
 
 .rrss li{
@@ -257,9 +331,4 @@ footer{
 .footer_links li{
     display: inline-block;
     padding: 0px 40px;
-}
-
-a img{
-    width: auto;
-    border-radius: 5%;
 }
