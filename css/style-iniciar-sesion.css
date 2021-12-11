@@ -210,7 +210,7 @@ input[type="text"]{
 }
 
 .iniciar_sesion{
-    font-size: 20px;
+    font-size: var(--h3);
     color: var(--negro);
     background-color: var(--violetaSuave);
     width: 30%;
@@ -219,9 +219,12 @@ input[type="text"]{
     border-radius: 5px;
     margin: 4% 0% 0% 35%;
     display: block;
+    font-family: var(--SourceSansPro);
+    font-weight: 800;
 }
 
-.login p{
+
+#login p{
     margin: 5% 0% 0% 13%;
     width: 65%;
 
