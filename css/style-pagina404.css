@@ -1,0 +1,222 @@
+/* Reseteamos los estilos del navegador */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Guia de estilos declarada con variables */
+:root{
+    --negro: #1f1f1f;
+    --gris: #EBEBEB;
+    --blanco: #f5f5f5;
+    --violetaSuave: #9873d3;
+    --violetaIntenso: #49277c;
+    --naranjaSuave: #FF9933;
+    --naranjaIntenso: #E07000;
+    --verdeSuave: #259a54;
+    --verdeIntenso: #146B37;
+    --h1: 50px;
+    --h2: 30px;
+    --h3: 24px;
+    --subhead: 20px;
+    --p: 19px;
+    --Gang: 'Gang of Three';
+    --Roboto: 'Roboto Slab';
+    --SourceSansPro: 'Source Sans Pro';
+
+}
+
+/* Fuentes tipograficas */
+@font-face {
+    font-family: 'Gang of Three';
+    src: url('../fonts/gang.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Estilos del header */
+header{
+    width: 100%;
+    font-family: var(--Gang);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--violetaIntenso);
+}
+
+.logo_header{
+    float: left;
+    background-color: var(--violetaSuave);
+    padding: 10px 3%;
+}
+
+.nav_links li a{
+    font-size: 20px;
+    background-color: var(--violetaIntenso);
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+li input{
+    font-size: 20px;
+    font-family: var(--Gang);
+    color: var(--violetaIntenso);
+    background-color: var(--blanco);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button{
+    font-family: var(--Gang);
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--blanco);
+    background-color: var(--violetaSuave);
+    width: 150px;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.registro{
+    padding: 0px 70px 0px 0px;
+    text-align: left;
+}
+
+/* Main */
+main{
+    background-color: var(--gris);
+    width: 100%;
+    height: 800px;
+    background-size: 100% 100%;
+}
+
+main section{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+
+main{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+    font-family: var(--Gang);  
+    background-color: rgb(25,25,25);  
+}
+
+.line-1{
+    position: relative;
+    top: 10%;  
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 500%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-25%);    
+}
+  
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+            blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 10em;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/* Estilos del footer */
+footer{
+    width: 100%;
+    font-family: var(--SourceSansPro);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--violetaIntenso);
+}
+
+.logo_footer{
+    float: left;
+    padding: 15px 3%;
+}
+
+.footer_links li a{
+    font-size: 16px;
+    background-color: var(--violetaIntenso);
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.rrss{
+    padding: 0px 100px;
+}
+
+.rrss p{
+    font-family: var(--SourceSansPro);
+    color: var(--blanco);
+}
+
+.rrss li{
+    display: inline-block;
+    padding: 0px 4%;
+}
+
+.footer_links{
+    list-style: none;
+}
+
+.footer_links li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+a img{
+    width: auto;
+    border-radius: 5%;
+}
