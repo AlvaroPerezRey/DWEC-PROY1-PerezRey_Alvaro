@@ -332,3 +332,311 @@ footer{
     display: inline-block;
     padding: 0px 40px;
 }
+
+/* Responsive design */
+
+@media (max-width: 1315px) and (min-width: 1025px){
+
+    /* Estilos del main */
+    section{
+        min-height: 600px;
+    }
+
+    .div_boton{
+        padding: 10px 50px 30px 0px;
+    }
+
+    .dark_light{
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    section h1{
+        font-size: 35px;
+        padding: 65px 0px 20px 0px;
+    }
+
+    section h2{
+        font-size: 20px;
+        padding: 0px 80px 25px 70px;
+    }
+
+    section div{
+        padding: 0px 40px 25px 80px;
+    }
+
+    .anime{
+        padding: 0px 15px 0px 0px;
+    }
+
+    .anime button:before {
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .anime button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 365px;
+        height: 220px;
+    }
+
+    .anime button{
+        font-size: 40px;
+        width: 380px;
+        height: 220px;
+    }
+
+    .manga{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .manga button:before {
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .manga button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 365px;
+        height: 220px;
+    }
+
+    .manga button{
+        font-size: 40px;
+        width: 380px;
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px){
+
+    /* Estilos del main */
+    section{
+        min-height: 500px;
+    }
+
+    .perfil {
+        width: 30px;
+        border-radius: 50px;
+    }
+
+    .titulo h1 {
+        padding-top: 7%;
+        font-size: 30px;
+    }
+
+    .div_boton{
+        padding: 10px 50px 30px 0px;
+    }
+
+    .dark_light{
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    section h1{
+        font-size: 35px;
+        padding: 65px 40px 20px 0px;
+    }
+
+    section h2{
+        font-size: 18px;
+        padding: 0px 110px 25px 70px;
+    }
+
+    section div{
+        padding: 0px 0px 25px 55px;
+    }
+
+    .anime{
+        padding: 0px 15px 0px 0px;
+    }
+
+    .anime button:before {
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .anime button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .anime button{
+        font-size: 40px;
+        width: 250px;
+        height: 160px;
+    }
+
+    .manga{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .manga button:before {
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+        margin-right: 0%;
+    }
+
+    .manga button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .manga button{
+        font-size: 40px;
+        width: 250px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+    
+    /* Estilos del main */
+    section{
+        min-height: 550px;
+    }
+
+    .perfil {
+        width: 22px;
+        border-radius: 50px;
+    }
+
+    .nav_links {
+        list-style: none;
+        width: 251px;
+        padding-left: 50px;
+    }
+
+    .nav_links li {
+        padding: 0px 2px;
+        height: 24px;
+    }
+
+    header p{
+        font-size: 12px;
+        padding: 0px 50px 0px 0px;
+    }
+
+    .perfil {
+        width: 20px;
+        border-radius: 50px;
+    }
+
+    .usuario{
+        padding-left: 0%;
+    }
+
+    .input{
+        width: 125px;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    .lista p {
+        font-size: 15px;
+    }
+
+    .lista {
+        font-family: var(--SourceSansPro);
+        font-size: 17px;
+    }
+
+    .div_boton{
+        padding: 10px 50px 30px 0px;
+    }
+
+    .dark_light{
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    section h1{
+        font-size: 35px;
+        padding: 65px 25px 20px 0px;
+    }
+
+    section h2{
+        font-size: 14px;
+        padding: 0px 50px 25px 25px;
+    }
+
+    section div{
+        padding: 0px 0px 25px 25px;
+    }
+
+    .anime{
+        padding: 0px 15px 0px 0px;
+    }
+
+    .anime button:before {
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .anime button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .anime button{
+        font-size: 30px;
+        width: 150px;
+        height: 80px;
+    }
+
+    .manga{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .manga button:before {
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+        margin-right: 0%;
+    }
+
+    .manga button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .manga button{
+        font-size: 30px;
+        width: 150px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,257 @@
+/* Responsive design */
+
+@media (max-width: 1315px) and (min-width: 1025px){
+    /* Estilos del header */
+    header{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .logo_header{
+        padding: 6px 2%;
+        width: 20%;
+    }
+
+    .logo_header img{
+        width: 95%;
+    }
+
+    .nav_links li a{
+        font-size: 18px;
+    }
+
+
+    .nav_links li{
+        padding: 0px 10px;
+    }
+
+    li input{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 18px;
+        width: 140px;
+        height: 30px;
+    }
+
+    .registro{
+        padding: 0px 40px 0px 0px;
+    }
+
+    /* Estilos del footer */
+    footer{
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .logo_footer{
+        padding: 15px 3%;
+    }
+
+    .footer_links li a{
+        font-size: 16px;
+    }
+
+    .rrss{
+        padding: 0px 100px;
+    }
+
+    .rrss li{
+        padding: 0px 4%;
+    }
+
+    .footer_links li{
+        padding: 0px 10px;
+    }
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px){
+    /* Estilos del header */
+    header{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .logo_header{
+        padding: 5px 2%;
+        width: 21%;
+        height: 100%;
+    }
+
+    .logo_header img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav_links li a{
+        font-size: 14px;
+    }
+
+
+    .nav_links li{
+        padding: 0px 5px;
+    }
+
+    li input{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    button{
+        font-size: 14px;
+        width: 110px;
+        height: 20px;
+    }
+
+    .registro{
+        padding: 0px 35px 0px 0px;
+    }
+
+    /* Estilos del footer */
+    footer{
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .logo_footer{
+        float: left;
+        padding: 10px 3%;
+        width: 55%;
+    }
+
+    .footer_links li a{
+        font-size: 12px;
+    }
+
+    .rrss{
+        padding: 0px 0px;
+        width: 140px;
+    }
+
+    .rrss li{
+        padding: 0px 4%;
+    }
+
+    .footer_links li{
+        padding: 0px 10px;
+    }
+
+    .footer_links{
+        list-style: none;
+        width: 110%;
+        padding-left: 1%;
+    }
+
+    li img{
+        max-width: 10px;
+        max-height: 10px;
+    }
+
+    ul p{
+        width: 105px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+    /* Estilos del header */
+    header{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    nav{
+        width: 60%;
+    }
+
+    .logo_header{
+        padding: 1px 1%;
+        width: 20%;
+        height: 100%;
+    }
+
+    .logo_header img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav_links li a{
+        font-size: 10px;
+    }
+
+    .input{
+        width: 85px;
+    }
+
+    .nav_links li{
+        padding: 0px 2px;
+    }
+
+    li input{
+        font-size: 10px;
+        width: 65%;
+        height: 13px;
+    }
+
+    button{
+        font-size: 10px;
+        width: 80px;
+        height: 15px;
+    }
+
+    .registro{
+        padding: 0px 10px 0px 0px;
+    }
+
+    /* Estilos del footer */
+    footer{
+        width: 100%;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .logo_footer{
+        float: left;
+        padding: 10px 3%;
+        width: 55%;
+    }
+
+    .footer_links li a{
+        font-size: 6px;
+    }
+
+    .rrss{
+        padding: 0px 30px 0px 70px;
+        width: 140px;
+    }
+
+    .rrss li{
+        padding: 0px 1%;
+    }
+
+    .footer_links li{
+        padding: 0px 5px 5px;
+    }
+
+    .footer_links{
+        list-style: none;
+        width: 180%;
+        padding-left: 8%;
+        margin-left: 0%;
+    }
+
+    li img{
+        max-width: 8px;
+        max-height: 8px;
+    }
+
+    ul p{
+        width: 70px;
+        font-size: 7px;
+    }
+}

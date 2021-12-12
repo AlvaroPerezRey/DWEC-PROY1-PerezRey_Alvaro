@@ -223,7 +223,6 @@ input[type="text"]{
     font-weight: 800;
 }
 
-
 #login p{
     margin: 5% 0% 0% 13%;
     width: 65%;
@@ -285,4 +284,75 @@ footer{
 a img{
     width: auto;
     border-radius: 5%;
+}
+
+/* Responsive design */
+
+@media (max-width: 1315px) and (min-width: 1025px){
+
+}
+
+@media (max-width: 1024px) and (min-width: 769px){
+    .iniciar_sesion {
+        width: 25%;
+        height: 20%;
+        margin: 4% 0% 0% 35%;
+        font-size: 18px;
+    }
+
+    div h2 {
+        font-size: 25px;
+        padding: 55% 0px 30% 0px;
+    }
+    
+    .registro_enlace {
+        font-size: 25px;
+        width: 65%;
+        height: 12%;
+        border: 1px solid var(--negro);
+        border-radius: 10px;
+        font-family: var(--Roboto);
+    }
+
+    .login {
+        height: 450px;
+    }
+
+    .registrate {
+        height: 450px;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+    .iniciar_sesion {
+        width: 40%;
+        height: 20%;
+        margin: 5% 0% 0% 30%;
+        font-size: 18px;
+    }
+
+    #login p {
+        margin: 5% 0% 0% 15%;
+        width: 65%;
+    }
+
+    div h2 {
+        font-size: 20px;
+        padding: 65% 0px 30% 0px;
+    }
+    
+    .registro_enlace {
+        font-size: 18px;
+        width: 75%;
+        height: 12%;
+    }
+
+    .login {
+        height: 400px;
+    }
+
+    .registrate {
+        height: 400px;
+    }
 }
