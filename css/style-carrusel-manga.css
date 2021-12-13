@@ -138,7 +138,7 @@ main section{
 }
 
 .carrusel{
-    background-color: rgba(235,235,235,0.9);
+    background-color: var(--blanco);
     border: 1px solid;
     border-radius: 15px;
     width: 75%;
@@ -164,7 +164,7 @@ main section{
     border-radius: 5px;
 }
 
-.banner-slide{
+.slider{
     width: 1200px;
     height: 460px;
     position: absolute;
@@ -186,28 +186,28 @@ main section{
     display: block;
 }
 
-.dots{
+.botones{
     position: absolute;
     right: 20px;
     bottom: 100px;
     text-align: right;
 }
 
-.dots span{
+.botones span{
     display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50px;
-    background-color: rgba(7,17,27,0.4);
+    background-color: var(--negro);
     margin-right: 8px;
     line-height: 12px;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
+    box-shadow: 0 0 0 2px var(--blanco) inset;
     cursor: pointer;
 }
 
-.dots span.active{
-    box-shadow: 0 0 0 2px rgba(7,17,27,0.4) inset;
-    background: #fff;
+.botones span.active{
+    box-shadow: 0 0 0 2px var(--negro) inset;
+    background: var(--blanco);
 }
 
 

@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style-favs-anime.css">
-    <script src="../js/favs-anime.js"></script>
+    
     <title>Favoritos</title>
 </head>
 <body>
@@ -26,18 +26,15 @@
     <main>
         <section>
             <div class="contacto">
-                <div class="titulo">
-                    <h1>CONTACTO</h1>
-                </div>
-                <form action="" id="formulario_contacto">
-                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
-                    <input type="text" placeholder="Apellidos" name="apellidos" id="apellidos" required>
-                    <input type="email" placeholder="Email" name="email" id="email" required>
-                    <textarea name="asunto" placeholder=" Asunto" id="asunto" cols="30" rows="6" form="formulario_contacto" required></textarea>
-                    <p>Introduce la suma de los siguientes numeros: <label id="valor1"></label>+<label id="valor2"></label></p>
-                    <input type="text" name="captcha" id="captcha" required>
-                    <p><button class="boton_enviar" type="submit">ENVIAR</button></p>
-                </form>
+
+                    <h1>Lista de titulos favoritos</h1>
+
+                    <form action="./favs-anime.html" method="post" id="favList">
+                        <input type="text" name="titulo" value="" placeholder="Título" id="list">
+                        <button type="button" name="button" id="añadir">Añadir</button>
+                    </form>
+                    <ol id="lista_titulos" class="lista">
+                    </ol>
             </div>
         </section>
     </main>
@@ -61,6 +58,6 @@
             </ul>
         </div>
     </footer>
-
+    <script src="../js/favs-anime.js"></script>
 </body>
 </html>

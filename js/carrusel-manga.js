@@ -1,62 +1,62 @@
-// Pase el mouse y pare
-// Ajustar un método en lugar de getElementById ()
+/* Funcion con operador ternario para el id */
 function byId(id) {
-    // Si es una ID de cadena, devuelve su objeto DOM
-   return  typeof id==="string"?document.getElementById(id):id;
+   return typeof id==="string"?document.getElementById(id):id;
 }
 
-    var index=2,timer=null,banner=byId("banner").getElementsByTagName("div"),len=banner.length,dots=byId("dots").getElementsByTagName("span");
-// el número de tramo es igual a la imagen div
+/* Indicamos con que imagen empezamos el carrusel */
+var index = 2;
+timer = null;
+banner = byId("banner").getElementsByTagName("div");
+len = banner.length,botones=byId("botones").getElementsByTagName("span");
 
-function slideImg() {
-    // Obtenga el rango de deslizamiento del mouse
+function moverImagen() {
+    /* Localizamos el ratón */
     var main=byId("main");
-    // Desliza el temporizador y deja para continuar
+
+    /* Funcion para parar el contador cuando el ratón se posiciona encima de la imagen */
     main.onmouseover=function () {
         if(timer){
             clearInterval(timer);
         }
     }
+
+    /* Funcion para identificar la imagen y la velocidad en segundo del carrusel */
     main.onmouseout=function () {
         timer=setInterval(function () {
             index++;
-            // len = 3, el índice solo puede ser 0, 1, 2
+            /* declarando los posibles indices para cada imagen, los puntos de abajo */
             if(index>=len){
                 index=0;
             }
-            // Cambia la imagen, también puedes hacer clic en el botón
-            changeImg();
-        },1000);// Llamado de vez en cuando, el lapso está activo cada tres segundos
+            /* Da la posibilidad al usuario de cambiar la imagen si necesidad de esperar al carrusel */
+            cambiarImagen();
+            /* Velocidad en milisegundos del carrusel */
+        },1000);
     }
-    // Se activa automáticamente en main
+
+    /* Se llama la funcion para que se automatice el carrusel al aterrizar a la pagina */
     main.onmouseout();
 
-    // Haga clic en los puntos para cambiar la imagen e repita todos los eventos de clic de enlace de puntos
+    /* Los puntos de abajo del carrusel para cambiar de imagen */
     for(var d=0;d<len;d++){
-        // Agregue un atributo de ID a todos los tramos, el valor es d, como el índice del tramo actual
-        dots[d].id=d;
-
-        dots[d].onclick=function () {
-
-            // Cambia el índice del tramo actual, pero hacer clic es el valor final de 3, porque la función cambia el alcance
+        /* Le da un atributo id a los tramos, el mismo que el indice del tramo actual */
+        botones[d].id=d;
+        botones[d].onclick=function () {
             index=this.id;
             this.className="active";
-            changeImg();
+            cambiarImagen();
         }
     }
 }
 
-function changeImg() {
-   // banner [index] .className = 'slide-active';
-    // Iterar a través de img, dots, clear div y dots shadow
-    // Ocultar todo primero, luego mostrar el actual
+/* Funcion con la cual vas a poder cambiar de imagen tanto de una manera como de otra, boton o automatizacion del carrusel */
+function cambiarImagen() {
     for(var i=0;i<len;i++){
         banner[i].style.display='none';
-        dots[i].className="";
+        botones[i].className="";
     }
     banner[index].style.display='block';
-    dots[index].className="active";
+    botones[index].className="active";
 }
 
-
-slideImg();
+moverImagen();

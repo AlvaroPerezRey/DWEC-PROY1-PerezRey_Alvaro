@@ -1,48 +1,50 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formulario_contacto").addEventListener('submit', validarFormulario); 
-  });
-  
-function validarFormulario(evento) {
-    evento.preventDefault();
+var count = 1;
 
-    var usuario = document.getElementById('nombre').value;
-    if(usuario.length == 0) {
-      alert('No has escrito nada en el usuario');
-      return;
-    }
-    
-    var apellidos = document.getElementById('apellidos').value;
-    if(apellidos.length == 0) {
-      alert('No has escrito nada en los apellidos');
-      return;
-    }
+/* Asignamos la funcion al boton añadir */
 
-    var email = document.getElementById('email').value;
-    if(email.length == 0) {
-      alert('No has escrito nada en el email');
-      return;
-    }
+document.getElementById('añadir').onclick = function (){ añadirLista()};
 
-    var asunto = document.getElementById('asunto').value;
-    if (asunto.length == 0) {
-      alert('El asunto esta vacio');
-      return;
-    }
+/* Funcion para añadir titulos y eliminar titulos de la lista de favoritos */
 
-    var captcha = document.getElementById('captcha').value;
-    if(captcha != suma) {
-      alert('Has escrito incorrectamente el captcha');
+function añadirLista(){
+  var favList = document.getElementById('list').value;
 
-    }
+  if (favList != ""){
+    /* Creamos la lista */
+    var nuevaLista = document.createElement('li');
+    nuevaLista.className = 'lista-item';
+    nuevaLista.id = 'list'+count;
+    var añadirListaAqui = document.getElementById("lista_titulos");
+    añadirListaAqui.appendChild(nuevaLista);
+    var nuevaLinea = document.createElement('span');
+    var nuevoTexto = document.createTextNode(favList);
+    nuevaLinea.appendChild(nuevoTexto);
+    var añadirLineaAqui = document.getElementById('list'+count);
+    añadirLineaAqui.appendChild(nuevaLinea);
 
-    this.submit();
+    /* Creamos un boton para eliminar el título y le damos una clase */
+    var nuevoBoton = document.createElement('button');
+    nuevoBoton.className = 'remove';
+    nuevoBoton.id = 'remove'+count;
+    var textoNuevoBoton = document.createTextNode('eliminar');
+    nuevoBoton.appendChild(textoNuevoBoton);
+    var añadirBotonAqui = document.getElementsByClassName('lista-item')[count-1];
+    añadirBotonAqui.appendChild(nuevoBoton);
+
+    document.getElementById(nuevoBoton.id).onclick = function(){eliminarList(nuevaLista.id)};
+
+    /* Eliminamos el titulo despues de pulsar el boton */
+    document.getElementById('list').value = "";
+
+    return count++;
+
   }
+return
+}
 
-    
-    var arrayCaracteres = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","U","V","W","X","Y","Z"];
-    var valor2 = Math.round(Math.random()*10);
-    var suma = valor1+valor2;
-    var mostrarValor1 = document.getElementById("valor1");
-    var mostrarValor2 = document.getElementById("valor2");
-    mostrarValor1.innerHTML = valor1;
-    mostrarValor2.innerHTML = valor2;
+/* Funcion para eliminar la lista cuando no haya titulos */
+function eliminarList(listId){
+  var eliminarLista = document.getElementById(listId);
+  var contenedorLista = eliminarLista.parentNode;
+  contenedorLista.removeChild(eliminarLista);
+}

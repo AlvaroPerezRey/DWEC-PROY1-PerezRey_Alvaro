@@ -137,23 +137,6 @@ main section{
     justify-content: center;
 }
 
-.titulo {
-    background-color: rgb(235, 235, 235);
-    border: 1px solid;
-    border-radius: 10px 10px 10px 10px;
-    width: 50%;
-    height: 100px;
-    position: relative;
-    margin: -4% 0% 0% 25%;
-}
-
-.titulo h1 {
-    height: 100%;
-    padding-top: 2%;
-    font-size: var(--h1);
-    font-family: var(--Roboto);
-}
-
 .contacto{
     background-color: rgba(235,235,235,0.9);
     border: 1px solid;
@@ -165,69 +148,88 @@ main section{
     margin-top: 5%;
 }
 
-form{
-    margin-top: 5%;
-    font-family: var(--Roboto);
-}
-
-input[type="text"]{
-    margin: 1% 2% 1% 2%;
-    width: 35%;
-    font-family: var(--SourceSansPro);
-    font-size: var(--h3);
-    border: none;
-    border-bottom: 1px solid var(--negro);
-    outline: 0;
-    background: none
-}
-
-input[type="password"]{
-    margin: 1% 0% 1% 0%;
-    width: 80%;
-    font-family: var(--SourceSansPro);
-    font-size: var(--h3);
-    border: none;
-    border-bottom: 1px solid var(--negro);
-    outline: 0;
-    background: none
-}
-
-input[type="email"]{
-    margin: 1% 0% 2% 0%;
-    width: 74%;
-    font-family: var(--SourceSansPro);
-    font-size: var(--h3);
-    border: none;
-    border-bottom: 1px solid var(--negro);
-    outline: 0;
-    background: none
-}
-
-textarea{
-    width: 74%;
-    background-color: rgba(235,235,235,0.85);
-    font-family: var(--SourceSansPro);
-    font-size: var(--h3);
-    border: 1px solid var(--negro);
-    resize: none;
-    border-radius: 5px;
-    margin-bottom: 3%;
-}
-
-.boton_enviar {
-    font-size: var(--h3);
-    font-family: var(--Roboto);
-    font-weight: 600;
-    color: var(--negro);
+h1{
+    font-size: 65px;
+    text-shadow: 2px 2px var(--negro);
+    margin-bottom: 10px;
+    font-family: var(--Gang);
+    font-weight: 800;
+    color: var(--blanco);
     background-color: var(--violetaSuave);
-    width: 25%;
-    height: 50px;
-    border: 1px solid var(--negro);
-    border-radius: 5px;
-    margin-top: 2%;
 }
 
+input{
+    padding: 10px 1px;
+    padding-right: 20px;
+    margin: 0 auto;
+    width: 25%;
+    margin: 6px;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.8);
+    background-color: var(--blanco);
+    color: var(--negro);
+}
 
+#añadir{
+    border-style: none;
+    background: var(--violetaSuave);
+    border: none;
+    padding: 6px 20px;
+    color: var(--blanco);
+    font-weight: 200;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: var(--negro);
+}
+
+span {
+    margin-left: 20px;
+    font-family: var(--SourceSansPro)
+}
+  
+
+#lista_titulos {
+    color: var(--negro);
+    font-size: 16px;
+    border: none;
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+.remove {
+    float: right;
+    background: var(--naranjaSuave);
+    border-radius: 3px;
+    border: none;
+    color: var(--gris);
+    font-size: 15px;
+    padding: 3px 5px;
+}
+  
+.remove:hover {
+    background: var(--naranjaIntenso);
+}
+  
+ol li {
+    text-align: left;
+    padding: 20px 0;
+}
+  
+ol li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-radius: 100%;
+    display: block;
+}
 
 /* Estilos del footer */
 footer{
