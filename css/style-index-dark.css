@@ -1,0 +1,544 @@
+/* Reseteamos los estilos del navegador */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Guia de estilos declarada con variables */
+:root{
+    --negro: #1f1f1f;
+    --gris: #EBEBEB;
+    --blanco: #f5f5f5;
+    --violetaSuave: #9873d3;
+    --violetaIntenso: #49277c;
+    --naranjaSuave: #FF9933;
+    --naranjaIntenso: #E07000;
+    --verdeSuave: #259a54;
+    --verdeIntenso: #146B37;
+    --h1: 50px;
+    --h2: 30px;
+    --h3: 24px;
+    --subhead: 20px;
+    --p: 19px;
+    --Gang: 'Gang of Three';
+    --Roboto: 'Roboto Slab';
+    --SourceSansPro: 'Source Sans Pro';
+
+}
+
+/* Fuentes tipograficas */
+@font-face {
+    font-family: 'Gang of Three';
+    src: url('../fonts/gang.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Estilos del header */
+header{
+    width: 100%;
+    font-family: var(--Gang);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--violetaIntenso);
+}
+
+.dark-mode{
+    background-color: var(--negro);
+    color: var(--naranjaIntenso);
+}
+
+.logo_header{
+    float: left;
+    background-color: var(--violetaSuave);
+    padding: 10px 3%;
+}
+
+.nav_links li a{
+    font-size: 20px;
+    background-color: var(--violetaIntenso);
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+li input{
+    font-size: 20px;
+    font-family: var(--Gang);
+    color: var(--violetaIntenso);
+    background-color: var(--blanco);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button{
+    font-family: var(--Gang);
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--blanco);
+    background-color: var(--violetaSuave);
+    width: 150px;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.registro{
+    padding: 0px 70px 0px 0px;
+    text-align: left;
+}
+
+button:hover {
+    color: var(--blanco);
+    box-shadow: 0 0 20px rgba(245, 245, 245, 0.5);
+    transition: all 0.2s ease;
+}
+
+/* Estilos del main */
+main{
+    background-image: url(../img/paisaje\ home.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.intermedia{
+    min-height: inherit;
+    opacity: 0.3;
+    width: 100%;
+    background: white;
+}
+
+section{
+    position: relative;
+    min-height: 750px;
+}
+
+.div_boton{
+    text-align: center;
+    padding: 10px 50px 30px 0px;
+    position: absolute;
+}
+
+.dark_light{
+    font-family: var(--Gang);
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--blanco);
+    background-color: var(--violetaSuave);
+    width: 150px;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+section h1{
+    font-family: var(--Roboto);
+    text-align: center;
+    color: var(--negro);
+    font-size: var(--h1);
+    padding: 100px 0px 20px 0px;
+}
+
+section h2{
+    font-family: var(--Roboto);
+    text-align: center;
+    color: var(--negro);
+    font-size: 24px;
+    padding: 0px 320px 100px 290px;
+}
+
+section div{
+    text-align: center;
+    padding: 0px 50px 30px 50px;
+    position: absolute;
+}
+
+.anime{
+    padding: 0px 20px 0px 0px;
+}
+
+.anime button:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 91%;
+    background: rgba(255, 153, 51, 0.1);
+    transition: all 1s ease;
+    margin-left: 4%;
+}
+
+.anime button:hover:before {
+    padding: 0px 20px 0px 0px;
+    width: 530px;
+    height: 300px;
+}
+
+.anime button{
+    font-family: var(--Roboto);
+    color: var(--negro);
+    background-color: var(--naranjaIntenso);
+    border: 1px solid var(--negro);
+    font-size: 50px;
+    width: 550px;
+    height: 300px;
+}
+
+.manga{
+    padding: 0px 0px 0px 20px;
+}
+
+.manga button:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0%;
+    height: 91%;
+    background: rgba(37, 154, 84, 0.1);
+    transition: all 1s ease;
+    margin-right: 4%;
+}
+
+.manga button:hover:before {
+    padding: 0px 20px 0px 0px;
+    width: 530px;
+    height: 300px;
+}
+
+.manga button{
+    font-family: var(--Roboto);
+    color: var(--negro);
+    background-color: var(--verdeIntenso);
+    border: 1px solid var(--negro);
+    font-size: 50px;
+    width: 550px;
+    height: 300px;
+}
+
+
+/* Estilos del footer */
+footer{
+    width: 100%;
+    font-family: var(--SourceSansPro);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--violetaIntenso);
+}
+
+.logo_footer{
+    float: left;
+    padding: 15px 3%;
+}
+
+.footer_links li a{
+    font-size: 16px;
+    background-color: var(--violetaIntenso);
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.rrss{
+    padding: 0px 100px;
+}
+
+.rrss p{
+    font-family: var(--SourceSansPro);
+    color: var(--blanco);
+
+}
+
+.rrss li{
+    display: inline-block;
+    padding: 0px 4%;
+}
+
+.footer_links{
+    list-style: none;
+}
+
+.footer_links li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+/* Responsive design */
+
+@media (max-width: 1315px) and (min-width: 1025px){
+
+    /* Estilos del main */
+    section{
+        min-height: 600px;
+    }
+
+    .div_boton{
+        padding: 10px 50px 30px 0px;
+    }
+
+    .dark_light{
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    section h1{
+        font-size: 35px;
+        padding: 65px 0px 20px 0px;
+    }
+
+    section h2{
+        font-size: 20px;
+        padding: 0px 80px 25px 70px;
+    }
+
+    section div{
+        padding: 0px 40px 25px 80px;
+    }
+
+    .anime{
+        padding: 0px 15px 0px 0px;
+    }
+
+    .anime button:before {
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .anime button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 365px;
+        height: 220px;
+    }
+
+    .anime button{
+        font-size: 40px;
+        width: 380px;
+        height: 220px;
+    }
+
+    .manga{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .manga button:before {
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .manga button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 365px;
+        height: 220px;
+    }
+
+    .manga button{
+        font-size: 40px;
+        width: 380px;
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px){
+
+    /* Estilos del main */
+    section{
+        min-height: 500px;
+    }
+
+    .div_boton{
+        padding: 10px 50px 30px 0px;
+    }
+
+    .dark_light{
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    section h1{
+        font-size: 35px;
+        padding: 65px 40px 20px 0px;
+    }
+
+    section h2{
+        font-size: 18px;
+        padding: 0px 110px 25px 70px;
+    }
+
+    section div{
+        padding: 0px 0px 25px 55px;
+    }
+
+    .anime{
+        padding: 0px 15px 0px 0px;
+    }
+
+    .anime button:before {
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .anime button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .anime button{
+        font-size: 40px;
+        width: 250px;
+        height: 160px;
+    }
+
+    .manga{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .manga button:before {
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+        margin-right: 0%;
+    }
+
+    .manga button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .manga button{
+        font-size: 40px;
+        width: 250px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+    
+    /* Estilos del main */
+    section{
+        min-height: 550px;
+    }
+
+    .div_boton{
+        padding: 10px 50px 30px 0px;
+    }
+
+    .dark_light{
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    section h1{
+        font-size: 35px;
+        padding: 65px 25px 20px 0px;
+    }
+
+    section h2{
+        font-size: 14px;
+        padding: 0px 50px 25px 25px;
+    }
+
+    section div{
+        padding: 0px 0px 25px 25px;
+    }
+
+    .anime{
+        padding: 0px 15px 0px 0px;
+    }
+
+    .anime button:before {
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+    }
+
+    .anime button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .anime button{
+        font-size: 30px;
+        width: 150px;
+        height: 80px;
+    }
+
+    .manga{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .manga button:before {
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 91%;
+        margin-left: 8%;
+        margin-right: 0%;
+    }
+
+    .manga button:hover:before {
+        padding: 0px 20px 0px 0px;
+        width: 235px;
+        height: 160px;
+    }
+
+    .manga button{
+        font-size: 30px;
+        width: 150px;
+        height: 80px;
+    }
+}
