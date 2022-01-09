@@ -120,7 +120,13 @@ header p{
 }
 
 /* Main */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+.listado {
+    font-family: "Roboto";
+    background: var(--gris);
+    color:var(--negro);
+    height: inherit;
+}
 
 .titulo{
     text-align: center;
@@ -129,93 +135,54 @@ header p{
     font-size: 40px;
 }
 
-.titulo button{
-    background-color: var(--violetaIntenso);
+.fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
 }
 
-.titulo button a{
-    color: var(--negro);
-    text-decoration: none;
+.fila > * {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+.fila .cuadro {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila .cuadro > .cuadro-content {
+    flex-grow: 1;
+    height: 260px;
+}
+
+.fila .cuadro > .image {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+
+main section {
+    min-height: 700px;
+    background: var(--gris);
+}
+
+.cuadro-content p{
+    font-size: 20px;
+}
+
+.cuadro-action a{
+    font-size: 15px;
 }
 
 body {
-    font-family: "Roboto";
-    background: var(--gris);
-    background: linear-gradient(55deg, var(--gris) 0%, var(--violetaSuave) 100%);
-    color:var(--negro);
+    margin: 0;
+    overflow-x: hidden;
 }
 
-h3,
-p {
-  margin: 0;
-}
 
-#main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 60px 0;
-}
-
-.result-block {
-  display: grid;
-  grid-template-columns: 225px auto;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 30px;
-}
-
-.text {
-    padding: 0 0 0 15px;
-    position: relative;
-}
-
-h3 {
-    font-size: 1.55rem;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 10px;
-    color: var(--negro);
-}
-
-p {
-    font-size: 1rem;
-}
-
-.bottom-bar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 15px;
-    width: 100%;
-}
-
-.score,.episodes {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-svg {
-    width: 20px;
-    margin-right: 10px;
-    display: block;
-    margin: 0 auto;
-}
-      
-small {
-    display: block;
-    font-size: 20px;
-    font-weight: normal;
-}
 
 /* Estilos del footer */
 footer{

@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style-listado-producto-anime.css">
+    <link rel="stylesheet" href="../css/style-buscador.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <title>Listado de productos</title>
+    <title>Buscador</title>
 </head>
 <body>
     <header>
@@ -27,13 +27,32 @@
         <section>
             <div class="listado">
                 <div class="titulo">
-                    <h1>LISTADO ANIME NARUTO</h1>
-                    <button><a href="../html/listado-producto-anime.html">NARUTO</a></button>
-                    <button><a href="../html/listado-producto-anime-onepiece.html">ONE PIECE</a></button>
-                    <button><a href="../html/listado-producto-anime-bleach.html">BLEACH</a></button>
-                    <button><a href="../html/listado-producto-anime-dragonball.html">DRAGON BALL</a></button>
+                    <h1>BUSCADOR DE ANIME</h1>
+                    <nav class="row">
+                        <div class="nav-wrapper">
+                            <div class="col s12">
+                                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container">
+                        <div class="row">
+                            <form id="search_form" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="Título..." name="search" id="search" type="text" class="validate">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="search-results" class="container">
+                        
+                    </div>
+            
+                    <script src="../js/buscador.js"></script>
                 </div>
-                <section id="main"></section>
             </div>
         </section>
     </main>
@@ -57,7 +76,5 @@
             </ul>
         </div>
     </footer>
-
-<script src="../js/listado-anime.js"></script>
 </body>
 </html>

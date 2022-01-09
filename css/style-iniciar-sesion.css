@@ -194,6 +194,17 @@ input[type="text"]{
     background: none
 }
 
+input[type="password"]{
+    margin: 1% 0% 1% 0%;
+    width: 70%;
+    font-family: "Source Sans Pro";
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid var(--negro);
+    outline: 0;
+    background: none
+}
+
 .label_captcha{
     display: inline;
 }
